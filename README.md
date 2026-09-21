@@ -82,17 +82,6 @@ Use Mongoose's `.populate('bookedBy')` on `getAllBookings`/`getBooking` so
 the response includes the referenced user's `name`/`email` instead of just
 an id.
 
-## Grading focus
-
-1. Does the model match the field table (types, defaults)?
-2. Does validation reject bad input (missing dates, `startDate` after
-   `endDate`)?
-3. Does creating an overlapping booking on the same room actually get
-   rejected with `409`, including edge cases (identical range, one range
-   fully inside another, adjacent-but-not-overlapping ranges)?
-4. Do all five CRUD routes work end-to-end, with correct status codes?
-5. (bonus) `.populate()`.
-
 You're expected to use AI tools while building this — that's fine and
 expected. But you should be able to explain, for any line in your
 controller, *why* it's there and what happens if you delete it. We will ask.
